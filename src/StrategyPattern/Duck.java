@@ -1,3 +1,5 @@
+package StrategyPattern;
+
 public abstract class Duck {
     public FlyBehavior flyBehavior;
     public QuackBehavior quackBehavior;
