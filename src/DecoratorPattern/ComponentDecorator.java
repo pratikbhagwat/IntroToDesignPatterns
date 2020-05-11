@@ -1,9 +1,9 @@
 package DecoratorPattern;
 
-public abstract class ComponentDecorator extends Beverage {
-    public Beverage beverage;
+public abstract class ComponentDecorator extends Coffee {
+    public Coffee beverage;
 
-    public  ComponentDecorator(Beverage beverage){
+    public  ComponentDecorator(Coffee beverage){
         this.beverage = beverage;
     }
     public Size getSize(){

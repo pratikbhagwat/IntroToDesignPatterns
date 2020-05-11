@@ -1,6 +1,6 @@
 package DecoratorPattern;
 
-public class FilterCoffee extends Beverage{
+public class FilterCoffee extends Coffee {
     public FilterCoffee(Size size){
         this.size = size;
         this.cost = 10 * this.size.factorOfMultiplicationOnBaseCost;

@@ -1,7 +1,7 @@
 package DecoratorPattern;
 
 public class Milk extends ComponentDecorator{
-    public Milk(Beverage beverage){
+    public Milk(Coffee beverage){
         super(beverage);
         this.description = this.beverage.description+ " Milk";
         this.cost = this.beverage.getCost() + 0.1*this.beverage.getSize().factorOfMultiplicationOnBaseCost;

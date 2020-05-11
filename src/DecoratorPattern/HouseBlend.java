@@ -1,6 +1,6 @@
 package DecoratorPattern;
 
-public class HouseBlend extends Beverage {
+public class HouseBlend extends Coffee {
     public HouseBlend(Size size){
         this.size = size;
         this.cost = 10 * this.size.factorOfMultiplicationOnBaseCost;

@@ -1,7 +1,7 @@
 package DecoratorPattern;
 
 public class Mocha extends ComponentDecorator {
-    public Mocha(Beverage beverage) {
+    public Mocha(Coffee beverage) {
         super(beverage);
         this.description = this.beverage.getDescription() + " Mocha";
         this.cost = this.beverage.getCost()+0.1*this.beverage.size.factorOfMultiplicationOnBaseCost;

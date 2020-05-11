@@ -1,6 +1,6 @@
 package DecoratorPattern;
 
-public abstract class Beverage {
+public abstract class Coffee {
     public String description ;
     public Size size;
 

@@ -9,7 +9,7 @@ public class StarbuzzCoffee {
         System.out.println("1.Filter Coffee");
         System.out.println("2.House Blend");
 
-        Beverage beverage = getBaseCoffeeInstance( Integer.parseInt( input.nextLine() ) , input);
+        Coffee beverage = getBaseCoffeeInstance( Integer.parseInt( input.nextLine() ) , input);
 
         while (true){
             System.out.println("Enter the condiment  option");
@@ -30,7 +30,7 @@ public class StarbuzzCoffee {
 
     }
 
-    private static Beverage getBeverageWithAddedCondiment(Beverage beverage, int i) throws Exception {
+    private static Coffee getBeverageWithAddedCondiment(Coffee beverage, int i) throws Exception {
         if (i ==1){
             return new Milk(beverage);
         }else if(i ==2){
@@ -40,7 +40,7 @@ public class StarbuzzCoffee {
         }
     }
 
-    private static Beverage getBaseCoffeeInstance(int parseInt , Scanner input) throws Exception {
+    private static Coffee getBaseCoffeeInstance(int parseInt , Scanner input) throws Exception {
         System.out.println("Enter size");
         System.out.println("1.Tall");
         System.out.println("2.Grande");
