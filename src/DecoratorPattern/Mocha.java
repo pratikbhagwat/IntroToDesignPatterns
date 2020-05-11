@@ -4,7 +4,7 @@ public class Mocha extends ComponentDecorator {
     public Mocha(Coffee beverage) {
         super(beverage);
         this.description = this.beverage.getDescription() + " Mocha";
-        this.cost = this.beverage.getCost()+0.1*this.beverage.size.factorOfMultiplicationOnBaseCost;
+        this.cost = this.beverage.getCost()+0.1*this.beverage.getSize().factorOfMultiplicationOnBaseCost;
     }
 
     @Override
