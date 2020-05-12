@@ -46,28 +46,10 @@ public class StarbuzzCoffee {
         System.out.println("2.Grande");
         System.out.println("3.Venti");
         int option = input.nextInt();
-        if (parseInt ==1){
-            if (option ==1){
-                return new FilterCoffee(new Tall());
-            }else if (option == 2){
-                return new FilterCoffee(new Grande());
-            }else if (option == 3){
-                return new FilterCoffee(new Venti());
-            }else {
-                throw new Exception("Enter correct input");
-            }
-        }else if (parseInt == 2) {
-            if (option ==1){
-                return new HouseBlend(new Tall());
-            }else if (option == 2){
-                return new HouseBlend(new Grande());
-            }else if (option == 3){
-                return new HouseBlend(new Venti());
-            }else {
-                throw new Exception("Enter correct input");
-            }
-        }else {
-            throw new Exception("Enter correct input");
-        }
+        CoffeeFactory coffeeFromBandraBranch = new StarBuzzBandra(parseInt,option);
+        CoffeeFactory coffeeFromGoregaonBranch = new StarBuzzGoregaon(parseInt,option);
+
+//        return coffeeFromBandraBranch.orderCoffee();
+        return coffeeFromGoregaonBranch.orderCoffee();
     }
 }
