@@ -11,4 +11,9 @@ public class TurnOnKitchenLightCommand implements Command {
     public void execute() {
         this.kitchenLight.turnOn();
     }
+
+    @Override
+    public void undo() {
+        this.kitchenLight.turnOff();
+    }
 }

@@ -10,4 +10,9 @@ public class TurnOnBedroomLightCommand implements Command {
     public void execute() {
         this.bedroomLight.turnOn();
     }
+
+    @Override
+    public void undo() {
+        this.bedroomLight.turnOff();
+    }
 }

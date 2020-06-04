@@ -10,4 +10,9 @@ public class TurnOnTableFanCommand  implements Command{
     public void execute() {
         this.tableFan.turnOn();
     }
+
+    @Override
+    public void undo() {
+        this.tableFan.turnOff();
+    }
 }
